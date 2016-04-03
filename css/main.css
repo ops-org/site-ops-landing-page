@@ -1,0 +1,225 @@
+body{
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	min-width: 350px;
+	background: #e0e0e0;
+}
+
+body, p{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	position: relative;
+	height: 100px;
+	background: #e0e0e0;
+}
+
+h1{
+	font-weight: normal;
+	font-size: 2em;
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+
+
+header .topRight{
+	margin-left: 37.33%;  /* 140 / 375 */
+}
+
+header small{
+	color: #666;
+	font-size: 0.8em;
+}
+
+header img{
+	width: 118px;
+	height: 118px;
+	position: absolute;
+	top: 11%; /* 11 / 100 */
+	left: 2.95%;
+}
+
+article{
+	background: #ffc107;
+	height: 172px;
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.3);
+}
+
+article p{
+    padding-top: 45px;
+	font-size: 2em;
+	text-align: center;
+	width: 74.66%;
+	margin: auto;
+}
+
+aside{
+	background: #e0e0e0;
+	min-height: 245px;
+}
+
+footer{
+	height: 100px;
+	background: #757575;
+}
+
+.greenBlock{
+	height: 10px;
+	background: #1cbb9d;
+}
+
+ul.download-buttons, ul.social-icons{
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.download-buttons:after{
+	content: '';
+	display: block;
+	height: 1px;
+	clear: both;
+	padding-bottom: 3.2%;
+}
+.download-buttons .icon-fb{
+	margin-top: 10px;
+}
+.download-buttons a, .download-buttons a:visited{
+	text-decoration: none;
+	color: #000;
+    font-size: 0.9em;
+}
+
+
+ul.download-buttons li:first-child{
+	margin-left: 2.93%;  /* 11 / 375 */
+}
+ul.download-buttons li{
+    text-align: center;
+	margin-right: 2.13%; /* 8 / 375 */
+	width: 29.60%; /* 111  / 375  */
+	float: left;
+	min-height: 112px;
+	border-radius: 5px;
+	background: #fff;
+	margin-top: 3.2%; /* 12 / 375 */
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.3);
+}
+ul.download-buttons li:last-child{
+	margin-right: 2.93%;  /* 11 / 375 */
+}
+
+ul.download-buttons li strong{
+	font-weight: bold;
+}
+
+
+.center-text{
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	font-size: 1em;
+}
+.center-text .strong{
+	font-size: 1.4em;
+	font-weight: bold;
+	padding-top: 2%;
+}
+
+
+.icon-fb{
+    margin: auto;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url('../images/icons.png') no-repeat;
+}
+
+.icon-fb.appstore{
+	background-position: -2px -120px;
+}
+.icon-fb.playstore{
+	background-position: -52px -120px;
+}
+.icon-fb.msstore{
+	background-position: -102px -120px;
+}
+
+footer{
+    clear: both;
+	text-align: center;
+	padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1em;
+    color: #ccc;
+}
+
+footer a{
+	font-size: 1.3em;
+	margin-top: 0.1%;
+	color: #fff;
+	display: block;
+}
+
+ul.social-icons{
+	width: 122px;
+    margin-top: 15px;
+}
+ul.social-icons::after{
+	content: '';
+	display: block;
+	height: 1px;
+	clear: both;
+	padding-bottom: 3.2%;
+}
+ul.social-icons li{
+	display: block;
+	float: left;
+}
+ul.social-icons span{
+	width: 35px;
+    height: 35px;
+}
+
+ul.social-icons li:nth-child(2){
+	margin: 0 8px 0 8px;
+}
+
+.icon-fb.facebook{
+	background-position: -118px -80px;
+}
+.icon-fb.luciobig{
+	background-position: -118px -40px;
+}
+.icon-fb.youtube{
+	background-position: -118px 0;
+}
+
+.desktopOnly{
+	display: none;
+}
+.appPreview{
+	display: none;
+}
+
+@media screen and (min-width: 900px) {
+	.desktopOnly{
+		display: block;
+	}
+
+	.appPreview{
+		display: block;
+	    height: 410px;
+	    left: 20%;
+	    position: absolute;
+	    top: 219px;
+	}
+
+	aside.right {
+	    margin-top: 5px;
+	    float: right;
+	    width: 50%;
+	    padding-right: 8%;
+	}
+}
